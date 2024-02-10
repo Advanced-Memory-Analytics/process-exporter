@@ -19,3 +19,9 @@
 
 # Go workspace file
 go.work
+
+# Intelli-J
+.idea
+
+# Mac
+.DS_Store
