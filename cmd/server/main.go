@@ -13,7 +13,7 @@ func init() {
 
 func main() {
 	log.SetOutput(os.Stdout)
-
+	api.CollectWithInterval()
 	err := api.StartServer()
 	if err != nil {
 		log.Fatalf("Server failed to start with error: %v.", err)
