@@ -10,5 +10,5 @@ var (
 	WEB_PORT = 9098
 
 	// Update Interval
-	INTERVAL = 10000 * time.Millisecond
+	INTERVAL = 10000 * time.Millisecond // 10 seconds
 )
