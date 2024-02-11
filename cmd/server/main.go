@@ -8,12 +8,11 @@ import (
 )
 
 func init() {
-	prometheus.MustRegister(api.ProcessCollector)
+	prometheus.MustRegister(api.NewProcessCollector())
 }
 
 func main() {
 	log.SetOutput(os.Stdout)
-	api.CollectWithInterval()
 	err := api.StartServer()
 	if err != nil {
 		log.Fatalf("Server failed to start with error: %v.", err)
