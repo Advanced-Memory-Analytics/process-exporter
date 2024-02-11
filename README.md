@@ -1,9 +1,9 @@
 # process-exporter
-Experimental exporter for processes running locally.
+Experimental metric exporter for processes running locally.
 
 ## Running
 Server opens on port 9098 by default. Options might be added later to configure this
-the command line.  Visit localhost:9098 to see metrics.  You can build an executable or run
+the via command line.  Visit localhost:9098/metrics to see metrics.  You can build an executable or run
 the server using ```go run cmd/server/main.go``` (assuming you are in the root of the project).
 
 ## Configure with Prometheus
