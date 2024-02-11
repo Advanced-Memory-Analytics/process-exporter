@@ -16,20 +16,20 @@ type processCollector struct {
 func NewProcessCollector() *processCollector {
 	return &processCollector{
 		cpuUsage: prometheus.NewDesc(
-			"cpu_usage",
+			"process_cpu_usage",
 			"Percentage of CPU used by a process.",
 			[]string{"process"},
 			nil,
 		),
 		memUsage: prometheus.NewDesc(
-			"memory_usage",
+			"process_memory_usage",
 			"Percentage of RAM used by a process.",
 			[]string{"process"},
 			nil,
 		),
 		idle: prometheus.NewDesc(
-			"is_idle",
-			"Whether a process is idle or running.",
+			"process_is_running",
+			"Whether a process is idle (0) or running (1).",
 			[]string{"process"},
 			nil,
 		),
