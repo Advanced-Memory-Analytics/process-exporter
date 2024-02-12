@@ -26,3 +26,6 @@ From here you can add a data source that gathers metrics from your prometheus se
 ## Acknowledgements
 This project relies heavily on an open source library to get process information.
 That open source project can be found here: [gopsutil](https://github.com/shirou/gopsutil?tab=readme-ov-file)
+
+This project also uses Prometheus' Golang client.
+That can be found here: [prometheus/client_golang](https://github.com/prometheus/client_golang)
